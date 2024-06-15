@@ -34,10 +34,8 @@ Write the corresponding MongoDB queries for the following questions:
 
 4. **List the four products which are greater than 500 in price**
 
-   
       db.products.find({ product_price: { $gt: 500 } }).limit(4);
    
-
 5. **Find the product name and product material of each product**
 
       db.products.find().forEach((pro) => {
